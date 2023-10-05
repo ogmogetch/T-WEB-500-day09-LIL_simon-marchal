@@ -1,19 +1,10 @@
 <?php
 function display_menu() {
-    $menu_html = '<ul>';
-    $menu_items = array(
-        'Home' => 'home.php',
-        'Products' => 'product.php',
-        'About Us' => 'about.php',
-        'Contact' => 'contact.php'
-    );
-
-    foreach ($menu_items as $label => $link) {
-        $menu_html .= '\n <li><a href="' . $link . '">' . $label . '</a></li>';
-    }
-
-    $menu_html .= '</ul>';
-
-    return $menu_html;
-}
-?>
+    return <<<HTML
+    <ul>
+        <li > <a href = "home.php"> Home </a > </li >
+        <li > <a href = "product.php"> Products </a > </li >
+        <li > <a href = "about.php"> About Us </a > </li >
+        <li > <a href = "contact.php"> Contact </a > </li >
+    </ul>
+    HTML;}
