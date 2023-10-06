@@ -11,7 +11,7 @@ function whoami() {
     $message = '';
 
     if (!empty($name)) {
-        $message .= "Hi, my name is $name.";
+        $message .= "Hi, my name is $name and";
     } else {
         $message .= "Hi, I have no name.";
     }
